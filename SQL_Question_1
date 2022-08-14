@@ -39,6 +39,3 @@ VALUES('ted83','Ted', 'Doe', 'ted.d@abc.com', 'England');
 INSERT INTO public.users
 (username, first_name, last_name, email, country)
 VALUES('ted930','Ted', 'Doe', 'ted.d83@abc.com', 'England');
-
-select first_name, last_name, count(*) from users u 
-group by first_name, last_name, country 
