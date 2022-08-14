@@ -1,0 +1,44 @@
+
+Copy following queries and run in your sql  console. 
+
+
+create table users(username varchar(255), first_name varchar(255), 
+last_name varchar(255), email varchar(255), country varchar(255));
+
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('ssharma','Sachin', 'Sharma', 'sachin.s@abc.com', 'India');
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('sdidna','Santosh', 'Dinda', 'santosh.d@abc.com', 'India');
+
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('sdidna','Gautam', 'Joshi', 'gautam.j@abc.com', 'India');
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('jsmith','Jack', 'Smith', 'jack.s@abc.com', 'England');
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('jacks','Jack', 'Smith', 'jack.s@abc.com', 'India');
+
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('sachin7783','Sachin', 'Sharma', 'sachin93@abc.com', 'Canada');
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('ted83','Ted', 'Doe', 'ted.d@abc.com', 'England');
+
+INSERT INTO public.users
+(username, first_name, last_name, email, country)
+VALUES('ted930','Ted', 'Doe', 'ted.d83@abc.com', 'England');
+
+select first_name, last_name, count(*) from users u 
+group by first_name, last_name, country 
